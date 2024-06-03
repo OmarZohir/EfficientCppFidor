@@ -1,6 +1,6 @@
-// 01 optimized to omit unnecessary bount check in compare()
+// Substring sort
 // Build as follows:
-// $CXX 03_substring_sort.C 03_substring_sort_a.C -g -O3 -I. --std=c++17 -o 01_substring_sort
+// $CXX 01_substring_sort.C 01_substring_sort_a.C -g -O3 -I. --std=c++17 -o 01_substring_sort
 #include <algorithm>
 #include <chrono>
 #include <cstdlib>
@@ -19,13 +19,13 @@ using std::minstd_rand;
 using std::unique_ptr;
 using std::vector;
 
-bool compare(const char* s1, const char* s2);
+bool compare(const char* s1, const char* s2, unsigned int l);
 
 int main() {
-#include "00_substring_sort_prep.C"
+#include "00_substring_sort_prep.cpp"
 
     size_t count = 0;
-    std::sort(vs.begin(), vs.end(), [&](const char* a, const char* b) { ++count; return compare(a, b); });
+    std::sort(vs.begin(), vs.end(), [&](const char* a, const char* b) { ++count; return compare(a, b, L); });
     //for (unsigned int i = 0; i < N; ++i) cout << "vs[" << i << "]=" << vs[i] << endl;
     system_clock::time_point t2 = system_clock::now();
     cout << "Sort time: " << duration_cast<milliseconds>(t2 - t1).count() << "ms (" << count << " comparisons)" << endl;

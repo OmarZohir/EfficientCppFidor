@@ -22,7 +22,7 @@ using std::vector;
 bool compare(const char* s1, const char* s2);
 
 int main() {
-#include "00_substring_sort_prep.C"
+#include "00_substring_sort_prep.cpp"
 
     size_t count = 0;
     std::sort(vs.begin(), vs.end(), [&](const char* a, const char* b) { ++count; return compare(a, b); });
