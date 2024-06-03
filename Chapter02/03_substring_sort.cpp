@@ -1,4 +1,6 @@
-// 03 using int instead of unsigned int in compare()
+// 01 optimized to omit unnecessary bount check in compare()
+// Build as follows:
+// $CXX 03_substring_sort.C 03_substring_sort_a.C -g -O3 -I. --std=c++17 -o 01_substring_sort
 #include <algorithm>
 #include <chrono>
 #include <cstdlib>
@@ -20,7 +22,7 @@ using std::vector;
 bool compare(const char* s1, const char* s2);
 
 int main() {
-#include "00_substring_sort_prep.C"
+#include "00_substring_sort_prep.cpp"
 
     size_t count = 0;
     std::sort(vs.begin(), vs.end(), [&](const char* a, const char* b) { ++count; return compare(a, b); });
