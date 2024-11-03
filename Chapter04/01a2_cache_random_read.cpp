@@ -5,6 +5,7 @@
 #include <immintrin.h>
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 #include "benchmark/benchmark.h"
 
@@ -26,8 +27,8 @@ void BM_read_rand(benchmark::State& state) {
     Word sink1; ::memset(&sink1, 0xab, sizeof(sink1));
     Word sink = sink1;
 
-    const size_t N = size/sizeof(Word);
-    std::vector<int> v_index(N); 
+    const size_t N = size / sizeof(Word);
+    std::vector<int> v_index(N);
     for (size_t i = 0; i < N; ++i) v_index[i] = i;
     std::random_shuffle(v_index.begin(), v_index.end());
     int* const index = v_index.data();
@@ -35,27 +36,22 @@ void BM_read_rand(benchmark::State& state) {
 
     for (auto _ : state) {
         for (const int* ind = index; ind < i1; ) {
-            //REPEAT(benchmark::DoNotOptimize(sink = *(p0 + *ind++));)
-            REPEAT(benchmark::DoNotOptimize(*(p0 + *ind++));)
+            REPEAT32(benchmark::DoNotOptimize(*(p0 + *ind++));)
         }
         benchmark::ClobberMemory();
     }
     benchmark::DoNotOptimize(sink);
     ::free(memory);
-    state.SetBytesProcessed(size*state.iterations());
-    state.SetItemsProcessed((p1 - p0)*state.iterations());
+    state.SetBytesProcessed(size * state.iterations());
+    state.SetItemsProcessed((p1 - p0) * state.iterations());
     char buf[1024];
     snprintf(buf, sizeof(buf), "%lu", size);
     state.SetLabel(buf);
 }
 
-
 #define ARGS \
-    ->RangeMultiplier(2)->Range(1<<10, 1<<30)
+    ->Arg(1<<27)  // Default size, will be overridden by command line
 
-//BENCHMARK_TEMPLATE1(BM_read_rand, unsigned int) ARGS;
-//BENCHMARK_TEMPLATE1(BM_read_rand, unsigned long) ARGS;
-//BENCHMARK_TEMPLATE1(BM_read_rand, __m128i) ARGS;
 BENCHMARK_TEMPLATE1(BM_read_rand, __m256i) ARGS;
 
 BENCHMARK_MAIN();

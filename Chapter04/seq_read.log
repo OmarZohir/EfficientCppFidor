@@ -1,0 +1,24 @@
+------------------------------------------------------------------------------------------
+Benchmark                                Time             CPU   Iterations UserCounters...
+------------------------------------------------------------------------------------------
+BM_read_seq<__m256i>/1024             5.08 ns         5.08 ns    112557927 bytes_per_second=187.852Gi/s items_per_second=6.30328G/s 1024
+BM_read_seq<__m256i>/2048             9.94 ns         9.93 ns     67356202 bytes_per_second=192.018Gi/s items_per_second=6.44305G/s 2048
+BM_read_seq<__m256i>/4096             19.2 ns         19.2 ns     34674150 bytes_per_second=199.078Gi/s items_per_second=6.67996G/s 4096
+BM_read_seq<__m256i>/8192             36.1 ns         36.1 ns     17407890 bytes_per_second=211.486Gi/s items_per_second=7.09631G/s 8192
+BM_read_seq<__m256i>/16384            69.1 ns         69.1 ns      9860391 bytes_per_second=220.829Gi/s items_per_second=7.4098G/s 16384
+BM_read_seq<__m256i>/32768             139 ns          139 ns      4781734 bytes_per_second=219.11Gi/s items_per_second=7.35211G/s 32768
+BM_read_seq<__m256i>/65536             278 ns          278 ns      2486819 bytes_per_second=219.839Gi/s items_per_second=7.37656G/s 65536
+BM_read_seq<__m256i>/131072            585 ns          585 ns      1184588 bytes_per_second=208.831Gi/s items_per_second=7.00722G/s 131072
+BM_read_seq<__m256i>/262144           1168 ns         1168 ns       599640 bytes_per_second=209.026Gi/s items_per_second=7.01373G/s 262144
+BM_read_seq<__m256i>/524288           2650 ns         2650 ns       240224 bytes_per_second=184.237Gi/s items_per_second=6.18198G/s 524288
+BM_read_seq<__m256i>/1048576          5106 ns         5106 ns       139374 bytes_per_second=191.255Gi/s items_per_second=6.41745G/s 1048576
+BM_read_seq<__m256i>/2097152         10261 ns        10261 ns        68613 bytes_per_second=190.347Gi/s items_per_second=6.38698G/s 2097152
+BM_read_seq<__m256i>/4194304         20855 ns        20855 ns        35248 bytes_per_second=187.308Gi/s items_per_second=6.285G/s 4194304
+BM_read_seq<__m256i>/8388608         84962 ns        84962 ns         7808 bytes_per_second=91.9529Gi/s items_per_second=3.08543G/s 8388608
+BM_read_seq<__m256i>/16777216       210329 ns       210324 ns         3373 bytes_per_second=74.29Gi/s items_per_second=2.49276G/s 16777216
+BM_read_seq<__m256i>/33554432       550832 ns       550825 ns         1295 bytes_per_second=56.7331Gi/s items_per_second=1.90365G/s 33554432
+BM_read_seq<__m256i>/67108864      1155002 ns      1154994 ns          624 bytes_per_second=54.1128Gi/s items_per_second=1.81573G/s 67108864
+BM_read_seq<__m256i>/134217728     2287538 ns      2287517 ns          315 bytes_per_second=54.6444Gi/s items_per_second=1.83356G/s 134217728
+BM_read_seq<__m256i>/268435456     4702034 ns      4701964 ns          156 bytes_per_second=53.1693Gi/s items_per_second=1.78406G/s 268435456
+BM_read_seq<__m256i>/536870912     9435893 ns      9435820 ns           76 bytes_per_second=52.9896Gi/s items_per_second=1.77803G/s 536870912
+BM_read_seq<__m256i>/1073741824   19978840 ns     19978447 ns           38 bytes_per_second=50.0539Gi/s items_per_second=1.67953G/s 1073741824

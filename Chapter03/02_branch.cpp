@@ -5,6 +5,7 @@
 #define MCA_END __asm volatile("# LLVM-MCA-END");
 
 #include "benchmark/benchmark.h"
+#include "02_branch_func.h"
 
 void BM_add_multiply(benchmark::State& state) {
     srand(1);
@@ -56,6 +57,8 @@ void BM_branch_cmove(benchmark::State& state) {
     state.SetItemsProcessed(N*state.iterations());
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
+
+// Branch easy to predict (and cannot be detected by the compiler that it is always taken)
 void BM_branch_predicted(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -86,6 +89,7 @@ void BM_branch_predicted(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// Branch harder to predict, branch taken if some random number is even or odd
 void BM_branch_not_predicted(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -118,6 +122,7 @@ void BM_branch_not_predicted(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// Random condition variable alternates, i.e., easy for the hardware branch predictor to predict the pattern
 void BM_branch_predict12(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -465,6 +470,7 @@ void BM_branchless1(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// Branch not predicted correctly
 void BM_branched2(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -495,6 +501,7 @@ void BM_branched2(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// Branch predicted correctly
 void BM_branched2_predicted(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -525,6 +532,7 @@ void BM_branched2_predicted(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// Branchless version of the code, where the branch is not predicted correctly
 void BM_branchless2(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -554,6 +562,7 @@ void BM_branchless2(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
+// The branchless version mentioned in the book in page 106
 void BM_branchless2a(benchmark::State& state) {
     srand(1);
     const unsigned int N = state.range(0);
@@ -582,7 +591,7 @@ void BM_branchless2a(benchmark::State& state) {
     //state.SetBytesProcessed(N*sizeof(unsigned long)*state.iterations());
 }
 
-#if 0
+#if 1
 extern unsigned long f1(unsigned long p1, unsigned long p2);
 extern unsigned long f2(unsigned long p1, unsigned long p2);
 void BM_branched_code(benchmark::State& state) {
@@ -647,26 +656,26 @@ void BM_branchless_code(benchmark::State& state) {
     ->Arg(1<<22)
 
 //BENCHMARK(BM_add_multiply) ARGS;
-//BENCHMARK(BM_branch_cmove) ARGS;
-//BENCHMARK(BM_branch_predicted) ARGS;
-//BENCHMARK(BM_branch_not_predicted) ARGS;
-//BENCHMARK(BM_branch_predict12) ARGS;
-//BENCHMARK(BM_false_branch) ARGS;
-//BENCHMARK(BM_false_branch_temp) ARGS;
-//BENCHMARK(BM_false_branch_vtemp) ARGS;
-//BENCHMARK(BM_false_branch_sum) ARGS;
-//BENCHMARK(BM_false_branch_bitwise) ARGS;
-//BENCHMARK(BM_add_multiply_unrolled) ARGS;
-//BENCHMARK(BM_branched) ARGS;
-//BENCHMARK(BM_branchless) ARGS;
-//BENCHMARK(BM_branched1) ARGS;
-//BENCHMARK(BM_branchless1) ARGS;
-//BENCHMARK(BM_branched2) ARGS;
-//BENCHMARK(BM_branched2_predicted) ARGS;
-//BENCHMARK(BM_branchless2) ARGS;
-//BENCHMARK(BM_branchless2a) ARGS;
-//BENCHMARK(BM_branched_code) ARGS;
-//BENCHMARK(BM_branchless_code) ARGS;
+// BENCHMARK(BM_branch_cmove) ARGS;
+// BENCHMARK(BM_branch_predicted) ARGS;
+// BENCHMARK(BM_branch_not_predicted) ARGS;
+// BENCHMARK(BM_branch_predict12) ARGS;
+// BENCHMARK(BM_false_branch) ARGS;
+// BENCHMARK(BM_false_branch_temp) ARGS;
+// BENCHMARK(BM_false_branch_vtemp) ARGS;
+// BENCHMARK(BM_false_branch_sum) ARGS;
+// BENCHMARK(BM_false_branch_bitwise) ARGS;
+// BENCHMARK(BM_add_multiply_unrolled) ARGS;
+// BENCHMARK(BM_branched) ARGS;
+// BENCHMARK(BM_branchless) ARGS;
+// BENCHMARK(BM_branched1) ARGS;
+// BENCHMARK(BM_branchless1) ARGS;
+// BENCHMARK(BM_branched2) ARGS;
+// BENCHMARK(BM_branched2_predicted) ARGS;
+// BENCHMARK(BM_branchless2) ARGS;
+// BENCHMARK(BM_branchless2a) ARGS;
+BENCHMARK(BM_branched_code) ARGS;
+BENCHMARK(BM_branchless_code) ARGS;
 
 BENCHMARK_MAIN();
 

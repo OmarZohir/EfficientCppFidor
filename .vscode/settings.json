@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "01_read.C": "cpp",
+        "01_superscalar.C": "cpp",
+        "01a_cache_random_read.C": "cpp"
+    }
+}

@@ -81,7 +81,7 @@ void BM_instructions4(benchmark::State& state) {
 #define ARGS \
     ->Arg(1<<22)
 
-//BENCHMARK(BM_instructions2) ARGS;
+BENCHMARK(BM_instructions2) ARGS;
 BENCHMARK(BM_instructions4) ARGS;
 
 BENCHMARK_MAIN();

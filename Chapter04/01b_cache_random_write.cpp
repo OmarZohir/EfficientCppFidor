@@ -15,6 +15,7 @@
 #define REPEAT32(x) REPEAT16(x) REPEAT16(x)
 #define REPEAT(x) REPEAT32(x)
 
+// Random write: Location where we write is unpredictable
 template <class Word>
 void BM_write_rand(benchmark::State& state) {
     void* memory;

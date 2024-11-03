@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "01_superscalar.C": "cpp",
+        "02_branch.C": "cpp",
+        "02_branch_func.C": "cpp"
+    }
+}

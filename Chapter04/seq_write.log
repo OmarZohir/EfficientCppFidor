@@ -1,0 +1,87 @@
+-------------------------------------------------------------------------------------------------
+Benchmark                                       Time             CPU   Iterations UserCounters...
+-------------------------------------------------------------------------------------------------
+BM_write_seq<unsigned int>/1024              69.9 ns         69.9 ns      9830425 bytes_per_second=13.6371Gi/s items_per_second=3.66068G/s 1024
+BM_write_seq<unsigned int>/2048               132 ns          132 ns      5150130 bytes_per_second=14.4897Gi/s items_per_second=3.88956G/s 2048
+BM_write_seq<unsigned int>/4096               261 ns          261 ns      2633458 bytes_per_second=14.6338Gi/s items_per_second=3.92822G/s 4096
+BM_write_seq<unsigned int>/8192               527 ns          527 ns      1347686 bytes_per_second=14.4773Gi/s items_per_second=3.88622G/s 8192
+BM_write_seq<unsigned int>/16384             1049 ns         1049 ns       669381 bytes_per_second=14.5418Gi/s items_per_second=3.90354G/s 16384
+BM_write_seq<unsigned int>/32768             2172 ns         2172 ns       309670 bytes_per_second=14.0486Gi/s items_per_second=3.77114G/s 32768
+BM_write_seq<unsigned int>/65536             4660 ns         4660 ns       152343 bytes_per_second=13.0972Gi/s items_per_second=3.51575G/s 65536
+BM_write_seq<unsigned int>/131072            9380 ns         9380 ns        75061 bytes_per_second=13.0145Gi/s items_per_second=3.49354G/s 131072
+BM_write_seq<unsigned int>/262144           19145 ns        19145 ns        36519 bytes_per_second=12.7521Gi/s items_per_second=3.4231G/s 262144
+BM_write_seq<unsigned int>/524288           39572 ns        39572 ns        17595 bytes_per_second=12.3391Gi/s items_per_second=3.31225G/s 524288
+BM_write_seq<unsigned int>/1048576          79192 ns        79191 ns         8869 bytes_per_second=12.3317Gi/s items_per_second=3.31026G/s 1048576
+BM_write_seq<unsigned int>/2097152         159968 ns       159967 ns         4407 bytes_per_second=12.2095Gi/s items_per_second=3.27747G/s 2097152
+BM_write_seq<unsigned int>/4194304         335000 ns       334997 ns         2182 bytes_per_second=11.6605Gi/s items_per_second=3.1301G/s 4194304
+BM_write_seq<unsigned int>/8388608         714852 ns       714848 ns         1014 bytes_per_second=10.9289Gi/s items_per_second=2.93371G/s 8388608
+BM_write_seq<unsigned int>/16777216       1454297 ns      1454267 ns          491 bytes_per_second=10.7442Gi/s items_per_second=2.88414G/s 16777216
+BM_write_seq<unsigned int>/33554432       3001755 ns      3001734 ns          246 bytes_per_second=10.4107Gi/s items_per_second=2.79459G/s 33554432
+BM_write_seq<unsigned int>/67108864       5730834 ns      5730844 ns          118 bytes_per_second=10.9059Gi/s items_per_second=2.92753G/s 67108864
+BM_write_seq<unsigned int>/134217728     11429683 ns     11429483 ns           52 bytes_per_second=10.9366Gi/s items_per_second=2.93578G/s 134217728
+BM_write_seq<unsigned int>/268435456     23697782 ns     23697493 ns           28 bytes_per_second=10.5496Gi/s items_per_second=2.8319G/s 268435456
+BM_write_seq<unsigned int>/536870912     52372846 ns     52372686 ns           14 bytes_per_second=9.54696Gi/s items_per_second=2.56274G/s 536870912
+BM_write_seq<unsigned int>/1073741824    97059867 ns     97060043 ns            7 bytes_per_second=10.3029Gi/s items_per_second=2.76566G/s 1073741824
+BM_write_seq<unsigned long>/1024             32.9 ns         32.6 ns     21104679 bytes_per_second=29.2694Gi/s items_per_second=3.92847G/s 1024
+BM_write_seq<unsigned long>/2048             71.6 ns         71.6 ns     10831973 bytes_per_second=26.6416Gi/s items_per_second=3.57578G/s 2048
+BM_write_seq<unsigned long>/4096              134 ns          134 ns      5346360 bytes_per_second=28.5175Gi/s items_per_second=3.82756G/s 4096
+BM_write_seq<unsigned long>/8192              288 ns          288 ns      2486780 bytes_per_second=26.5124Gi/s items_per_second=3.55843G/s 8192
+BM_write_seq<unsigned long>/16384             525 ns          525 ns      1319204 bytes_per_second=29.0698Gi/s items_per_second=3.90168G/s 16384
+BM_write_seq<unsigned long>/32768            1118 ns         1118 ns       598807 bytes_per_second=27.2938Gi/s items_per_second=3.66331G/s 32768
+BM_write_seq<unsigned long>/65536            2398 ns         2398 ns       250577 bytes_per_second=25.4572Gi/s items_per_second=3.41681G/s 65536
+BM_write_seq<unsigned long>/131072           5084 ns         5083 ns       144162 bytes_per_second=24.0143Gi/s items_per_second=3.22315G/s 131072
+BM_write_seq<unsigned long>/262144          12634 ns        12634 ns        69133 bytes_per_second=19.3245Gi/s items_per_second=2.59369G/s 262144
+BM_write_seq<unsigned long>/524288          23238 ns        23238 ns        29842 bytes_per_second=21.0124Gi/s items_per_second=2.82023G/s 524288
+BM_write_seq<unsigned long>/1048576         47297 ns        47297 ns        14977 bytes_per_second=20.6476Gi/s items_per_second=2.77128G/s 1048576
+BM_write_seq<unsigned long>/2097152         92789 ns        92789 ns         7469 bytes_per_second=21.0491Gi/s items_per_second=2.82516G/s 2097152
+BM_write_seq<unsigned long>/4194304        218285 ns       218274 ns         3745 bytes_per_second=17.8961Gi/s items_per_second=2.40197G/s 4194304
+BM_write_seq<unsigned long>/8388608        546857 ns       546856 ns         1355 bytes_per_second=14.2862Gi/s items_per_second=1.91746G/s 8388608
+BM_write_seq<unsigned long>/16777216      1247602 ns      1247591 ns          555 bytes_per_second=12.5241Gi/s items_per_second=1.68096G/s 16777216
+BM_write_seq<unsigned long>/33554432      2713807 ns      2713765 ns          237 bytes_per_second=11.5154Gi/s items_per_second=1.54557G/s 33554432
+BM_write_seq<unsigned long>/67108864      5568439 ns      5568324 ns          133 bytes_per_second=11.2242Gi/s items_per_second=1.50649G/s 67108864
+BM_write_seq<unsigned long>/134217728    10937800 ns     10936291 ns           64 bytes_per_second=11.4298Gi/s items_per_second=1.53409G/s 134217728
+BM_write_seq<unsigned long>/268435456    20652839 ns     20652433 ns           30 bytes_per_second=12.1051Gi/s items_per_second=1.62472G/s 268435456
+BM_write_seq<unsigned long>/536870912    40082339 ns     40072933 ns           18 bytes_per_second=12.4772Gi/s items_per_second=1.67467G/s 536870912
+BM_write_seq<unsigned long>/1073741824   80065490 ns     80064778 ns            9 bytes_per_second=12.4899Gi/s items_per_second=1.67636G/s 1073741824
+BM_write_seq<__m128i>/1024                   16.8 ns         16.6 ns     43110271 bytes_per_second=57.3049Gi/s items_per_second=3.84566G/s 1024
+BM_write_seq<__m128i>/2048                   36.1 ns         36.1 ns     21320747 bytes_per_second=52.8183Gi/s items_per_second=3.54457G/s 2048
+BM_write_seq<__m128i>/4096                   67.8 ns         67.8 ns     10725323 bytes_per_second=56.2557Gi/s items_per_second=3.77526G/s 4096
+BM_write_seq<__m128i>/8192                    139 ns          139 ns      5123682 bytes_per_second=54.9765Gi/s items_per_second=3.68941G/s 8192
+BM_write_seq<__m128i>/16384                   273 ns          273 ns      2640013 bytes_per_second=55.8264Gi/s items_per_second=3.74645G/s 16384
+BM_write_seq<__m128i>/32768                   615 ns          615 ns      1284583 bytes_per_second=49.5896Gi/s items_per_second=3.3279G/s 32768
+BM_write_seq<__m128i>/65536                  1460 ns         1460 ns       477419 bytes_per_second=41.8127Gi/s items_per_second=2.806G/s 65536
+BM_write_seq<__m128i>/131072                 3010 ns         3010 ns       248732 bytes_per_second=40.5483Gi/s items_per_second=2.72115G/s 131072
+BM_write_seq<__m128i>/262144                 5997 ns         5997 ns       104129 bytes_per_second=40.7105Gi/s items_per_second=2.73204G/s 262144
+BM_write_seq<__m128i>/524288                13386 ns        13386 ns        53103 bytes_per_second=36.4763Gi/s items_per_second=2.44788G/s 524288
+BM_write_seq<__m128i>/1048576               26384 ns        26384 ns        25235 bytes_per_second=37.0137Gi/s items_per_second=2.48395G/s 1048576
+BM_write_seq<__m128i>/2097152               54107 ns        54107 ns        13253 bytes_per_second=36.0977Gi/s items_per_second=2.42247G/s 2097152
+BM_write_seq<__m128i>/4194304              111224 ns       111223 ns         6380 bytes_per_second=35.1207Gi/s items_per_second=2.35691G/s 4194304
+BM_write_seq<__m128i>/8388608              422541 ns       422540 ns         1711 bytes_per_second=18.4894Gi/s items_per_second=1.2408G/s 8388608
+BM_write_seq<__m128i>/16777216            1056753 ns      1056735 ns          674 bytes_per_second=14.7861Gi/s items_per_second=992.279M/s 16777216
+BM_write_seq<__m128i>/33554432            2338705 ns      2338635 ns          303 bytes_per_second=13.3625Gi/s items_per_second=896.742M/s 33554432
+BM_write_seq<__m128i>/67108864            4801600 ns      4801470 ns          140 bytes_per_second=13.0168Gi/s items_per_second=873.546M/s 67108864
+BM_write_seq<__m128i>/134217728           9933581 ns      9930243 ns           67 bytes_per_second=12.5878Gi/s items_per_second=844.754M/s 134217728
+BM_write_seq<__m128i>/268435456          21420677 ns     21420531 ns           36 bytes_per_second=11.671Gi/s items_per_second=783.231M/s 268435456
+BM_write_seq<__m128i>/536870912          39618142 ns     39614417 ns           18 bytes_per_second=12.6217Gi/s items_per_second=847.026M/s 536870912
+BM_write_seq<__m128i>/1073741824         77564371 ns     77555837 ns            8 bytes_per_second=12.8939Gi/s items_per_second=865.297M/s 1073741824
+BM_write_seq<__m256i>/1024                   8.68 ns         8.67 ns     84822987 bytes_per_second=109.941Gi/s items_per_second=3.68902G/s 1024
+BM_write_seq<__m256i>/2048                   17.5 ns         17.5 ns     41116392 bytes_per_second=109.058Gi/s items_per_second=3.65939G/s 2048
+BM_write_seq<__m256i>/4096                   38.8 ns         38.8 ns     17731255 bytes_per_second=98.2612Gi/s items_per_second=3.2971G/s 4096
+BM_write_seq<__m256i>/8192                   69.8 ns         69.8 ns      9355812 bytes_per_second=109.353Gi/s items_per_second=3.66929G/s 8192
+BM_write_seq<__m256i>/16384                   148 ns          148 ns      4990959 bytes_per_second=103.067Gi/s items_per_second=3.45835G/s 16384
+BM_write_seq<__m256i>/32768                   292 ns          292 ns      2326937 bytes_per_second=104.429Gi/s items_per_second=3.50406G/s 32768
+BM_write_seq<__m256i>/65536                  1142 ns         1142 ns       701155 bytes_per_second=53.4273Gi/s items_per_second=1.79272G/s 65536
+BM_write_seq<__m256i>/131072                 1994 ns         1994 ns       348543 bytes_per_second=61.232Gi/s items_per_second=2.05461G/s 131072
+BM_write_seq<__m256i>/262144                 5392 ns         5392 ns       100000 bytes_per_second=45.2822Gi/s items_per_second=1.51942G/s 262144
+BM_write_seq<__m256i>/524288                12437 ns        12437 ns        52375 bytes_per_second=39.261Gi/s items_per_second=1.31738G/s 524288
+BM_write_seq<__m256i>/1048576               25713 ns        25712 ns        26357 bytes_per_second=37.9802Gi/s items_per_second=1.2744G/s 1048576
+BM_write_seq<__m256i>/2097152               51697 ns        51698 ns        13839 bytes_per_second=37.7798Gi/s items_per_second=1.26768G/s 2097152
+BM_write_seq<__m256i>/4194304              106310 ns       106310 ns         6742 bytes_per_second=36.7438Gi/s items_per_second=1.23292G/s 4194304
+BM_write_seq<__m256i>/8388608              398659 ns       398662 ns         1737 bytes_per_second=19.5968Gi/s items_per_second=657.56M/s 8388608
+BM_write_seq<__m256i>/16777216            1165556 ns      1165547 ns          552 bytes_per_second=13.4057Gi/s items_per_second=449.821M/s 16777216
+BM_write_seq<__m256i>/33554432            2362203 ns      2361617 ns          260 bytes_per_second=13.2325Gi/s items_per_second=444.008M/s 33554432
+BM_write_seq<__m256i>/67108864            5028941 ns      5028734 ns          131 bytes_per_second=12.4286Gi/s items_per_second=417.034M/s 67108864
+BM_write_seq<__m256i>/134217728          10062625 ns     10062081 ns           70 bytes_per_second=12.4229Gi/s items_per_second=416.843M/s 134217728
+BM_write_seq<__m256i>/268435456          20540588 ns     20540646 ns           35 bytes_per_second=12.171Gi/s items_per_second=408.391M/s 268435456
+BM_write_seq<__m256i>/536870912          43236316 ns     43235647 ns           17 bytes_per_second=11.5645Gi/s items_per_second=388.041M/s 536870912
+BM_write_seq<__m256i>/1073741824         82831709 ns     82820711 ns            9 bytes_per_second=12.0743Gi/s items_per_second=405.145M/s 1073741824

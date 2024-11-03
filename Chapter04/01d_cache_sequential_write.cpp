@@ -23,7 +23,8 @@ void BM_write_seq(benchmark::State& state) {
     void* const end = static_cast<char*>(memory) + size;
     volatile Word* const p0 = static_cast<Word*>(memory);
     Word* const p1 = static_cast<Word*>(end);
-    Word fill1; ::memset(&fill1, 0xab, sizeof(fill1));
+    Word fill1;
+    ::memset(&fill1, 0xab, sizeof(fill1));
     Word fill = fill1;
 
     for (auto _ : state) {

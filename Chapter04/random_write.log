@@ -1,0 +1,87 @@
+--------------------------------------------------------------------------------------------------
+Benchmark                                        Time             CPU   Iterations UserCounters...
+--------------------------------------------------------------------------------------------------
+BM_write_rand<unsigned int>/1024               105 ns          105 ns      6461749 bytes_per_second=9.07446Gi/s items_per_second=2.43591G/s 1024
+BM_write_rand<unsigned int>/2048               205 ns          205 ns      3514351 bytes_per_second=9.2951Gi/s items_per_second=2.49513G/s 2048
+BM_write_rand<unsigned int>/4096               401 ns          401 ns      1740928 bytes_per_second=9.52481Gi/s items_per_second=2.5568G/s 4096
+BM_write_rand<unsigned int>/8192               800 ns          800 ns       894674 bytes_per_second=9.54064Gi/s items_per_second=2.56105G/s 8192
+BM_write_rand<unsigned int>/16384             1634 ns         1634 ns       442253 bytes_per_second=9.33629Gi/s items_per_second=2.50619G/s 16384
+BM_write_rand<unsigned int>/32768             4833 ns         4833 ns       143617 bytes_per_second=6.31477Gi/s items_per_second=1.69511G/s 32768
+BM_write_rand<unsigned int>/65536            15488 ns        15487 ns        45857 bytes_per_second=3.94096Gi/s items_per_second=1.05789G/s 65536
+BM_write_rand<unsigned int>/131072           36662 ns        36662 ns        19251 bytes_per_second=3.3296Gi/s items_per_second=893.784M/s 131072
+BM_write_rand<unsigned int>/262144           90699 ns        90698 ns         7631 bytes_per_second=2.6918Gi/s items_per_second=722.573M/s 262144
+BM_write_rand<unsigned int>/524288          231350 ns       231349 ns         3148 bytes_per_second=2.11058Gi/s items_per_second=566.555M/s 524288
+BM_write_rand<unsigned int>/1048576         501002 ns       501003 ns         1418 bytes_per_second=1.94922Gi/s items_per_second=523.239M/s 1048576
+BM_write_rand<unsigned int>/2097152         995488 ns       995490 ns          695 bytes_per_second=1.96197Gi/s items_per_second=526.663M/s 2097152
+BM_write_rand<unsigned int>/4194304        2240913 ns      2240921 ns          311 bytes_per_second=1.74315Gi/s items_per_second=467.922M/s 4194304
+BM_write_rand<unsigned int>/8388608        9396174 ns      9396190 ns           73 bytes_per_second=851.409Mi/s items_per_second=223.192M/s 8388608
+BM_write_rand<unsigned int>/16777216      31211737 ns     31211368 ns           25 bytes_per_second=512.634Mi/s items_per_second=134.384M/s 16777216
+BM_write_rand<unsigned int>/33554432      69572380 ns     69554956 ns            9 bytes_per_second=460.068Mi/s items_per_second=120.604M/s 33554432
+BM_write_rand<unsigned int>/67108864     163353206 ns    163188125 ns            4 bytes_per_second=392.185Mi/s items_per_second=102.809M/s 67108864
+BM_write_rand<unsigned int>/134217728    354818266 ns    354808500 ns            2 bytes_per_second=360.758Mi/s items_per_second=94.5705M/s 134217728
+BM_write_rand<unsigned int>/268435456    788314037 ns    788096600 ns            1 bytes_per_second=324.833Mi/s items_per_second=85.1531M/s 268435456
+BM_write_rand<unsigned int>/536870912   1634531811 ns   1634510700 ns            1 bytes_per_second=313.244Mi/s items_per_second=82.1149M/s 536870912
+BM_write_rand<unsigned int>/1073741824  4171392295 ns   4171310700 ns            1 bytes_per_second=245.486Mi/s items_per_second=64.3528M/s 1073741824
+BM_write_rand<unsigned long>/1024             49.8 ns         49.8 ns     13857435 bytes_per_second=19.1569Gi/s items_per_second=2.57119G/s 1024
+BM_write_rand<unsigned long>/2048             99.9 ns         99.9 ns      6939027 bytes_per_second=19.1002Gi/s items_per_second=2.56358G/s 2048
+BM_write_rand<unsigned long>/4096              212 ns          211 ns      3456664 bytes_per_second=18.1181Gi/s items_per_second=2.43177G/s 4096
+BM_write_rand<unsigned long>/8192              527 ns          527 ns      1000000 bytes_per_second=14.4902Gi/s items_per_second=1.94484G/s 8192
+BM_write_rand<unsigned long>/16384             925 ns          925 ns       593533 bytes_per_second=16.5007Gi/s items_per_second=2.21469G/s 16384
+BM_write_rand<unsigned long>/32768            3355 ns         3355 ns       286279 bytes_per_second=9.09522Gi/s items_per_second=1.22074G/s 32768
+BM_write_rand<unsigned long>/65536           11508 ns        11508 ns        73747 bytes_per_second=5.30369Gi/s items_per_second=711.849M/s 65536
+BM_write_rand<unsigned long>/131072          21318 ns        21318 ns        28389 bytes_per_second=5.72613Gi/s items_per_second=768.548M/s 131072
+BM_write_rand<unsigned long>/262144          56399 ns        56398 ns        15347 bytes_per_second=4.3289Gi/s items_per_second=581.015M/s 262144
+BM_write_rand<unsigned long>/524288         115966 ns       115964 ns         5796 bytes_per_second=4.21062Gi/s items_per_second=565.14M/s 524288
+BM_write_rand<unsigned long>/1048576        280874 ns       280869 ns         2940 bytes_per_second=3.47694Gi/s items_per_second=466.666M/s 1048576
+BM_write_rand<unsigned long>/2097152        500931 ns       500912 ns         1420 bytes_per_second=3.89914Gi/s items_per_second=523.334M/s 2097152
+BM_write_rand<unsigned long>/4194304       1066304 ns      1066284 ns          500 bytes_per_second=3.66343Gi/s items_per_second=491.697M/s 4194304
+BM_write_rand<unsigned long>/8388608       4894904 ns      4894811 ns          149 bytes_per_second=1.59608Gi/s items_per_second=214.222M/s 8388608
+BM_write_rand<unsigned long>/16777216     15874209 ns     15872996 ns           45 bytes_per_second=1008Mi/s items_per_second=132.121M/s 16777216
+BM_write_rand<unsigned long>/33554432     35807735 ns     35807939 ns           18 bytes_per_second=893.657Mi/s items_per_second=117.133M/s 33554432
+BM_write_rand<unsigned long>/67108864     77972889 ns     77871414 ns            7 bytes_per_second=821.868Mi/s items_per_second=107.724M/s 67108864
+BM_write_rand<unsigned long>/134217728   188427940 ns    188123167 ns            3 bytes_per_second=680.405Mi/s items_per_second=89.1821M/s 134217728
+BM_write_rand<unsigned long>/268435456   389063799 ns    389064500 ns            2 bytes_per_second=657.989Mi/s items_per_second=86.2439M/s 268435456
+BM_write_rand<unsigned long>/536870912   868183365 ns    868170700 ns            1 bytes_per_second=589.746Mi/s items_per_second=77.2992M/s 536870912
+BM_write_rand<unsigned long>/1073741824 2011097881 ns   2011057300 ns            1 bytes_per_second=509.185Mi/s items_per_second=66.7399M/s 1073741824
+BM_write_rand<__m128i>/1024                   27.9 ns         27.9 ns     27055817 bytes_per_second=34.2318Gi/s items_per_second=2.29726G/s 1024
+BM_write_rand<__m128i>/2048                   54.1 ns         54.1 ns     12881879 bytes_per_second=35.2597Gi/s items_per_second=2.36624G/s 2048
+BM_write_rand<__m128i>/4096                    109 ns          109 ns      6940368 bytes_per_second=34.9997Gi/s items_per_second=2.34879G/s 4096
+BM_write_rand<__m128i>/8192                    244 ns          244 ns      3257790 bytes_per_second=31.2757Gi/s items_per_second=2.09887G/s 8192
+BM_write_rand<__m128i>/16384                   424 ns          424 ns      1198850 bytes_per_second=35.9947Gi/s items_per_second=2.41556G/s 16384
+BM_write_rand<__m128i>/32768                  1290 ns         1290 ns       516556 bytes_per_second=23.6499Gi/s items_per_second=1.58712G/s 32768
+BM_write_rand<__m128i>/65536                  4010 ns         4010 ns       145052 bytes_per_second=15.2208Gi/s items_per_second=1.02145G/s 65536
+BM_write_rand<__m128i>/131072                 9754 ns         9754 ns        74107 bytes_per_second=12.515Gi/s items_per_second=839.867M/s 131072
+BM_write_rand<__m128i>/262144                27912 ns        27912 ns        30778 bytes_per_second=8.74691Gi/s items_per_second=586.995M/s 262144
+BM_write_rand<__m128i>/524288                59393 ns        59394 ns        10345 bytes_per_second=8.22112Gi/s items_per_second=551.71M/s 524288
+BM_write_rand<__m128i>/1048576              143451 ns       143452 ns         5759 bytes_per_second=6.8076Gi/s items_per_second=456.85M/s 1048576
+BM_write_rand<__m128i>/2097152              250898 ns       250899 ns         2851 bytes_per_second=7.7845Gi/s items_per_second=522.409M/s 2097152
+BM_write_rand<__m128i>/4194304              587247 ns       587251 ns         1072 bytes_per_second=6.65176Gi/s items_per_second=446.392M/s 4194304
+BM_write_rand<__m128i>/8388608             2786043 ns      2786000 ns          224 bytes_per_second=2.8042Gi/s items_per_second=188.187M/s 8388608
+BM_write_rand<__m128i>/16777216            8749168 ns      8749165 ns           74 bytes_per_second=1.78588Gi/s items_per_second=119.849M/s 16777216
+BM_write_rand<__m128i>/33554432           19307476 ns     19307451 ns           37 bytes_per_second=1.61855Gi/s items_per_second=108.619M/s 33554432
+BM_write_rand<__m128i>/67108864           44703708 ns     44703771 ns           14 bytes_per_second=1.39809Gi/s items_per_second=93.8244M/s 67108864
+BM_write_rand<__m128i>/134217728          97610869 ns     97606867 ns            6 bytes_per_second=1.28065Gi/s items_per_second=85.9428M/s 134217728
+BM_write_rand<__m128i>/268435456         216629805 ns    216626500 ns            3 bytes_per_second=1.15406Gi/s items_per_second=77.4477M/s 268435456
+BM_write_rand<__m128i>/536870912         451432460 ns    451425850 ns            2 bytes_per_second=1.1076Gi/s items_per_second=74.3299M/s 536870912
+BM_write_rand<__m128i>/1073741824       1083498080 ns   1083498700 ns            1 bytes_per_second=945.087Mi/s items_per_second=61.9372M/s 1073741824
+BM_write_rand<__m256i>/1024                   13.6 ns         13.6 ns     42579412 bytes_per_second=69.9732Gi/s items_per_second=2.34791G/s 1024
+BM_write_rand<__m256i>/2048                   26.9 ns         26.9 ns     25836894 bytes_per_second=70.8689Gi/s items_per_second=2.37797G/s 2048
+BM_write_rand<__m256i>/4096                   57.8 ns         57.8 ns     12130475 bytes_per_second=66.0087Gi/s items_per_second=2.21489G/s 4096
+BM_write_rand<__m256i>/8192                    124 ns          124 ns      6721256 bytes_per_second=61.635Gi/s items_per_second=2.06813G/s 8192
+BM_write_rand<__m256i>/16384                   235 ns          235 ns      3259222 bytes_per_second=65.0103Gi/s items_per_second=2.18139G/s 16384
+BM_write_rand<__m256i>/32768                   624 ns          624 ns      1204705 bytes_per_second=48.8923Gi/s items_per_second=1.64055G/s 32768
+BM_write_rand<__m256i>/65536                  2142 ns         2142 ns       327976 bytes_per_second=28.4968Gi/s items_per_second=956.196M/s 65536
+BM_write_rand<__m256i>/131072                 4935 ns         4935 ns       140421 bytes_per_second=24.734Gi/s items_per_second=829.935M/s 131072
+BM_write_rand<__m256i>/262144                11939 ns        11939 ns        59649 bytes_per_second=20.4494Gi/s items_per_second=686.168M/s 262144
+BM_write_rand<__m256i>/524288                30422 ns        30422 ns        23075 bytes_per_second=16.0502Gi/s items_per_second=538.555M/s 524288
+BM_write_rand<__m256i>/1048576               67008 ns        67008 ns        10440 bytes_per_second=14.5738Gi/s items_per_second=489.016M/s 1048576
+BM_write_rand<__m256i>/2097152              128281 ns       128281 ns         4062 bytes_per_second=15.2254Gi/s items_per_second=510.879M/s 2097152
+BM_write_rand<__m256i>/4194304              266124 ns       266123 ns         2688 bytes_per_second=14.6783Gi/s items_per_second=492.523M/s 4194304
+BM_write_rand<__m256i>/8388608             1583174 ns      1583184 ns          440 bytes_per_second=4.93468Gi/s items_per_second=165.58M/s 8388608
+BM_write_rand<__m256i>/16777216            5343287 ns      5343292 ns          133 bytes_per_second=2.92423Gi/s items_per_second=98.1208M/s 16777216
+BM_write_rand<__m256i>/33554432           11423974 ns     11423884 ns           62 bytes_per_second=2.7355Gi/s items_per_second=91.788M/s 33554432
+BM_write_rand<__m256i>/67108864           26067277 ns     26067327 ns           26 bytes_per_second=2.39764Gi/s items_per_second=80.4514M/s 67108864
+BM_write_rand<__m256i>/134217728          58841245 ns     58840644 ns            9 bytes_per_second=2.12438Gi/s items_per_second=71.2824M/s 134217728
+BM_write_rand<__m256i>/268435456         132255802 ns    132253500 ns            4 bytes_per_second=1.89031Gi/s items_per_second=63.4282M/s 268435456
+BM_write_rand<__m256i>/536870912         290364155 ns    290360450 ns            2 bytes_per_second=1.722Gi/s items_per_second=57.7807M/s 536870912
+BM_write_rand<__m256i>/1073741824        705305810 ns    705292100 ns            1 bytes_per_second=1.41785Gi/s items_per_second=47.5752M/s 1073741824
