@@ -15,7 +15,10 @@ bool compare_int(const char* s1, const char* s2) {
     }
 }
 
+<<<<<<< HEAD
 //state here includes only the number of number of characters in the sort
+=======
+>>>>>>> e7f1d5231da1efc9cc55b83d03c3e42015011fa1
 void BM_loop_int(benchmark::State& state) {
     const unsigned int N = state.range(0);
     unique_ptr<char[]> s(new char[2*N]);
